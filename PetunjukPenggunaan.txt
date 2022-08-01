@@ -1,0 +1,14 @@
+*PETUNJUK PENGGUNAAN*
+1. Unduh file zip
+2. Extrak file zip
+3. Lalu buka project dari netbeans
+
+*PETUNJUK APLIKASI*
+1. Run code
+  #Jika ingin masuk sebagai anggota:
+     2. Email: helvatios@gmail.com
+     3. Password Utama: 1111
+  #Jika ingin masuk sebagai pengurus:
+     4. Password Pengurus: 2222
+
+
