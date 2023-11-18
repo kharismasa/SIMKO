@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #A3E4D7;" stylesheets="@tampil.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Verifikasi.VerifikasiController">
+   <children>
+      <Label layoutX="102.0" layoutY="152.0" prefHeight="26.0" prefWidth="197.0" text="Silakan Close Aplikasi Lalu Buka Lagi" textAlignment="CENTER" />
+      <Button fx:id="bLanjut" layoutX="170.0" layoutY="265.0" mnemonicParsing="false" onAction="#CloseAction" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: #45B39D;" text="OK" textFill="WHITE">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="721.0" style="-fx-background-color: #A3E4D7;" stylesheets="@tampil.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="masukfxml.FXMLControllerUtama">
+    <children>
+        <Button layoutX="470.0" layoutY="298.0" onAction="#LoginAction" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #3498DB;" text="Log-In" textFill="WHITE">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="bLanjut" layoutX="470.0" layoutY="347.0" onAction="#SignUpAction" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #2980B9;" text="Sign-Up" textFill="WHITE">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="tfEmail" layoutX="415.0" layoutY="151.0" prefHeight="31.0" prefWidth="251.0" />
+      <Label layoutX="347.0" layoutY="158.0" prefHeight="17.0" prefWidth="52.0" text="Email" textFill="#87b512">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="347.0" layoutY="210.0" prefHeight="17.0" prefWidth="59.0" text="Password" textFill="#87b512">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="347.0" layoutY="226.0" prefHeight="17.0" prefWidth="43.0" text="Utama" textFill="#87b512">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <PasswordField fx:id="tfPUtama" layoutX="415.0" layoutY="206.0" prefHeight="31.0" prefWidth="251.0" />
+      <ImageView fitHeight="418.0" fitWidth="402.0" layoutX="-25.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@simko.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="59.0" layoutY="62.0" prefHeight="60.0" prefWidth="234.0" text="Selamat Datang di" textFill="#87b512">
+         <font>
+            <Font name="Britannic Bold" size="25.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

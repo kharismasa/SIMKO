@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="606.0" prefWidth="721.0" style="-fx-background-color: #0FFFD4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Beranda.BerandaController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffc0" height="372.0" layoutX="8.0" layoutY="59.0" stroke="#f0f0f0" strokeType="INSIDE" width="703.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffbf" height="142.0" layoutX="485.0" layoutY="441.0" stroke="WHITE" strokeType="INSIDE" width="222.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.6973684430122375" green="0.6973684430122375" blue="0.6973684430122375" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffbf" height="142.0" layoutX="247.0" layoutY="441.0" stroke="WHITE" strokeType="INSIDE" width="228.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.6973684430122375" green="0.6973684430122375" blue="0.6973684430122375" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffbf" height="142.0" layoutX="14.0" layoutY="441.0" stroke="WHITE" strokeType="INSIDE" width="222.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.6973684430122375" green="0.6973684430122375" blue="0.6973684430122375" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffc0" height="36.0" layoutX="10.0" layoutY="13.0" stroke="#f0f0f0" strokeType="INSIDE" width="703.0" />
+      <LineChart fx:id="lc" layoutX="34.0" layoutY="75.0" prefHeight="338.0" prefWidth="639.0" title="Line Chart">
+        <xAxis>
+          <CategoryAxis label="Tanggal" side="BOTTOM" fx:id="x" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" label="Nominal" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label layoutX="100.0" layoutY="466.0" prefHeight="29.0" prefWidth="51.0" text="Sisa Kas">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="label" layoutX="35.0" layoutY="495.0" prefHeight="61.0" prefWidth="181.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="326.0" layoutY="466.0" prefHeight="29.0" prefWidth="73.0" text="Pendapatan">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="560.0" layoutY="466.0" prefHeight="29.0" prefWidth="73.0" text="Pengeluaran">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" layoutX="280.0" layoutY="495.0" prefHeight="61.0" prefWidth="166.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label3" layoutX="513.0" layoutY="495.0" prefHeight="61.0" prefWidth="166.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lnama" layoutX="15.0" layoutY="12.0" prefHeight="35.0" prefWidth="690.0">
+         <font>
+            <Font name="Microsoft Sans Serif" size="25.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.4549763033175356">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.7368420958518982" blue="0.7122806906700134" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007662835249042145">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.4444444477558136" green="0.9259259104728699" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

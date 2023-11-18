@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MasukFXML.jnlp">
+    <information>
+        <title>MasukFXML</title>
+        <vendor>User</vendor>
+        <description>null</description>
+        <offline-allowed/>
+    </information>
+    <update check="always"/>
+    <resources>
+        <j2se version="9+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="MasukFXML.jar" size="273514" download="eager"/>
+        <jar href="lib\xstream-1.4.10.jar" size="589803" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="800" height="600" main-class="masukfxml.MasukFXML" name="MasukFXML"/>
+</jnlp>
+

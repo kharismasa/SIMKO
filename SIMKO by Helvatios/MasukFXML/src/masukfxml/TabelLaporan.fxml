@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="606.0" prefWidth="721.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Transaksi.TabelTransaksiController">
+   <children>
+      <Label fx:id="label" layoutX="16.0" layoutY="57.0" prefHeight="31.0" prefWidth="241.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="tfNama" layoutX="47.0" layoutY="125.0" prefHeight="25.0" prefWidth="307.0" promptText="isi Nama Transaksi" style="-fx-background-color: white;" />
+      <TextField fx:id="tfNominal" layoutX="46.0" layoutY="233.0" prefHeight="25.0" prefWidth="307.0" promptText="Isi Nominal Transaksi" style="-fx-background-color: white;" />
+      <TextField fx:id="tfKet" layoutX="46.0" layoutY="287.0" prefHeight="25.0" prefWidth="307.0" promptText="isi Keterangan Transaksi" style="-fx-background-color: white;" />
+      <Button layoutX="488.0" layoutY="203.0" mnemonicParsing="false" onAction="#PendapatanAction" prefHeight="38.0" prefWidth="105.0" style="-fx-background-color: #0FFFD4; -fx-border-color: #10bf7c;" text="Pendapatan">
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.062745101749897" green="0.7490196228027344" blue="0.48627451062202454" />
+               </color>
+            </InnerShadow>
+         </effect></Button>
+      <DatePicker fx:id="dp" layoutX="47.0" layoutY="179.0" prefHeight="25.0" prefWidth="207.0" promptText="Isi Tanggal Transaksi" />
+      <Button layoutX="488.0" layoutY="239.0" mnemonicParsing="false" onAction="#PengeluaranAction" prefHeight="38.0" prefWidth="105.0" style="-fx-background-color: #0FFFD4; -fx-border-color: #10bf7c;" text="Pengeluaran">
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.062745101749897" green="0.7490196228027344" blue="0.48627451062202454" />
+               </color>
+            </InnerShadow>
+         </effect></Button>
+      <TableView fx:id="table" layoutX="17.0" layoutY="382.0" onMouseClicked="#select" prefHeight="210.0" prefWidth="685.0" style="-fx-background-color: white; -fx-border-color: #0FFFD4;">
+        <columns>
+            <TableColumn fx:id="tcJenis" prefWidth="111.0" text="Jenis Transaksi" />
+          <TableColumn fx:id="tcNama" prefWidth="122.0" text="Kategori" />
+          <TableColumn fx:id="tcNominal" prefWidth="132.0" text="Nominal" />
+            <TableColumn fx:id="tcTanggal" prefWidth="131.0" text="Tanggal" />
+            <TableColumn fx:id="tcKet" prefWidth="188.0" text="Keterangan" />
+        </columns>
+      </TableView>
+      <Label layoutX="20.0" layoutY="42.0" text="Sisa Kas">
+         <font>
+            <Font name="Bodoni MT Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="250.0" layoutY="18.0" text="CATAT TRANSAKSI KEUANGAN">
+         <font>
+            <Font name="Bodoni MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="106.0" text="Kategori Transaksi">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="157.0" text="Tanggal Transaksi">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="214.0" text="Nominal">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="266.0" text="Keterangan">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="488.0" layoutY="276.0" mnemonicParsing="false" onAction="#HapusRow" prefHeight="38.0" prefWidth="105.0" style="-fx-background-color: #0FFFD4; -fx-border-color: #10bf7c;" text="Hapus">
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.062745101749897" green="0.7490196228027344" blue="0.48627451062202454" />
+               </color>
+            </InnerShadow>
+         </effect></Button>
+      <Line endX="173.0" layoutX="180.0" layoutY="150.0" startX="-133.0" />
+      <Line endX="173.0" layoutX="180.0" layoutY="258.0" startX="-133.0" />
+      <Line endX="173.0" layoutX="180.0" layoutY="312.0" startX="-133.0" />
+   </children>
+</AnchorPane>
